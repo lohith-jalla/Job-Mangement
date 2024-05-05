@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(77, 157, 160);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      /* background: url("/images/background_hiring.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; */
+      background-color:aquamarine;
+    }
+    
+    .container {
+      max-width: 700px;
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color:transparent ;
+      border: 2px solid white;
+      color:white;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    input[type="file"] {
+      margin-top: 10px;
+    }
+    
+    textarea {
+      height: 100px;
+    }
+    
+    input[type="submit"] {
+      background-color: rgb(76, 175, 80);
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: rgb(69, 160, 73);
+    }
+
+    :hover{
+        opacity: 1;
+    }
+
+    .recruiter{
+        width:200px;
+        height: auto;
+       
+        margin-right: 100px;
+        /* background: url("recruiter.png");
+        background-repeat: no-repeat ;
+        background-size: cover; */
+    }
+
+    .recruiter img{
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .recruiter , .jobseeker{
+        animation:imageupdown 4s infinite ease-in-out;
+    }
+
+    @keyframes imageupdown {
+
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30px); 
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="recruiter">
+        <img src="images/recruiter.png" alt="">
+    </div>
+
+<div class="container">
+  <h2>Mentor Registration Form</h2>
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="expertise">Areas of Expertise (Select one or more):</label>
+    <select id="expertise" name="expertise" required>
+      <option value="Programming">Programming</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Data Science">Data Science</option>
+      <option value="UX/UI Design">UX/UI Design</option>
+      <option value="Digital Marketing">Digital Marketing</option>
+      <option value="System Design">System Design</option>
+      <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+      <option value="Full Stack Development">Full Stack Development</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <fieldset>
+        <legend>Past Experience</legend>
+        <label for="company">Previous Company Name:</label>
+        <input type="text" id="company" name="company" required>
+
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" required>
+
+        <label for="work-done">Work Done:</label>
+        <select id="expertise" name="expertise" required>
+        <option value="Programmer">Programmer</option>
+        <option value="Web Developer">Web Developer</option>
+        <option value="Data Scientist">Data Scientist</option>
+        <option value="UX/UI Designer">UX/UI Designer</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="System Designer">System Designer</option>
+        <option value="Data Structures and Algo Expert">Data Structures and Algo Expert</option>
+        <option value="Full Stack Developer">Full Stack Developer</option>
+    </select>
+
+        <label for="time">Time Period:(From)</label>
+        <input type="datetime-local" id="time" name="time" placeholder="e.g., January 2018 - March 2020" required>
+        <span>--------</span>
+        <label for="time">(Upto):</label>
+        <input type="datetime-local" id="time" name="time" placeholder="e.g., January 2018 - March 2020" required>
+    </fieldset>
+
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+    <div class="jobseeker">
+        <img src="images/jobseeker.png" alt="" height="400px">
+    </div>
+
+</body>
+</html>

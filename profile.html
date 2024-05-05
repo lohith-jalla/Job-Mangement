@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff7f50;
+    }
+
+    main {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 150px);
+    }
+
+    .profile {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #007bff;
+    }
+
+    .name {
+      margin: 5px 0;
+      font-size: 32px;
+      color: #333;
+    }
+
+    .location, .profession, .goals {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .courses {
+      margin-top: 20px;
+    }
+
+    .courses h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .courses ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .courses ul li {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="profile">
+        <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+        <h1 class="name">Batch-06</h1>
+        <p class="location">India</p>
+        <p class="profession">Fresher | Student</p>
+        <p class="email">Email: Batch-06@example.com</p>
+        <p class="gmail">Gmail: Batch-06@gmail.com</p>
+        <div class="courses">
+          <h2>Courses of Interest</h2>
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Development</li>
+            <li>Machine Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 jobgenie. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

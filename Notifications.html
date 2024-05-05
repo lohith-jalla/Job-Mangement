@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding:0px;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .notifications{
+            height:130px;
+            width:99%;
+            background-color: rgb(196, 118, 118);
+            border: 2px solid white;
+            border-radius: 20px;
+            margin:6px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .IntroNotifications{
+            height:100px;
+            width:210px;
+            background-color: rgb(196, 118, 118);
+            border: 2px solid white;
+            border-radius: 20px;
+            margin:6px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 12px;
+        }
+
+        .notifications:hover{
+            transform: scale(1.01);
+        }
+        
+        .notifications p{
+            font-size: 32px;
+            color:white;
+            padding-top:10px;
+        }
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="IntroNotifications">
+        <h1>NOTIFICATIONS</h1>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Job offer from Microsoft!</p>
+        <p>Click-Here for Transition</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Job offer from Amazon!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Job offer from Google!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Job offer from Gold man saccs!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Connection from Lohith Jalla!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Intern offer from Microsoft!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Connection from Rohith Indupalli!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Job offer from TCS!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Intern at TD at Vignan University!</p>
+        <p>Check-out</p>
+    </div>
+    <div class="notifications" onclick="toggleChecked(this)">
+        <p>You have a new Job offer from HCL!</p>
+        <p>Check-out</p>
+    </div>
+
+
+    <script>
+        function toggleChecked(div) {
+            const isChecked = div.getAttribute('data-checked') === 'true';
+    
+            if (!isChecked) {
+                div.setAttribute('data-checked', 'true');
+                div.style.backgroundColor = "blue";
+                div.classList.add('fade-out');
+                div.addEventListener('transitionend', () => {
+                    div.remove();
+                });
+            }   
+        }
+
+    </script>
+</body>
+
+</html>

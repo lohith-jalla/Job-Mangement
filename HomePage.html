@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HomePage</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" width="150px">
+        </div>
+        <div class="prepare">
+            <a href="#matter"><button id="select">Prepare</button></a>
+            <a href="#job_score"><button id="select">Contest</button></a>
+            <a href="#jobs"><button id="select">Opportunities</button></a>
+            <a href="#Alumini_container"><button id="select">Aluminies</button></a>
+        </div>
+
+
+        <div class="searchBar">
+            <input type="text" placeholder="Search" id="nav_search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="notifications">
+            <a href="Notifications.html"><i class="fa-solid fa-bell"></i></a>
+            <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+
+
+    <!-- *******************Hero Section ************************* -->
+
+    <div class="hero_section">
+        <h1>JOB GENIE</h1>
+        <!-- <button id="hero_section_button">Connect Here</button> -->
+    </div>
+
+    <!-- *************************Content************************* -->
+
+    <div class="content">
+        <div id="matter">
+<pre id="pre1">                
+   UPGRADE YOUR 
+   CAREER SITE 
+   EXPERIENCE</pre><br>
+<pre id="pre2">       Imagine having the flexibility to incorporate custom Jobs, 
+       rapid Job changes and  unique landing Interns on 
+       a cutting edge technology platform is at your fingertips.</pre>
+        <button id="get_started" onclick="getStarted()">Get Started</button>
+        </div>
+
+        <div class="image">
+            <img src="images/content_img.avif" alt="content" width="400px">
+        </div>
+    </div>
+
+    <!-- ************************jobs******************************* -->
+    
+    <div id="jobs">
+        <div><h1>Popular Jobs</h1></div>
+        <div class="jobs2_for_these_divs">
+            <div class="div_jobs">
+                <div class="iimg">
+                    <img src="images/webdev.avif" width="300px" height="200px">
+                </div>
+<pre id="pre-description">
+
+  Job-description:web Design
+  salary:10k-15k
+  Location:Remote
+  Tools required: HTML -CSS -JS 
+                    -Anguar Js 
+                    -React Js
+                    -Database
+                    -Node Js 
+                    -PHP
+</pre>
+                <!-- /1/Job description// -->
+            </div>
+            <div class="div_jobs">
+                <div class="iimg">
+                    <img src="images/Tester.png" width="300px" height="190px">
+                </div>
+<pre id="pre-description">
+
+
+  Job-description: Testing
+  salary: 12k-25k
+  Location: Banglore/chennai
+  Tools required: -unit-Testing
+            -Performance-testing
+            -Integeration-testing
+</pre>               
+                <!-- /2/Job description// -->
+                
+            </div>
+            <div class="div_jobs">
+                <div class="iimg">
+                    <img src="images/Backend.webp" width="300px" height="200px">
+                </div>
+<pre id="pre-description">
+
+  Job-description:Front-End
+  salary:10k-15k
+  Location:Remote
+  Tools required: -OOPS-Language
+                (Python/Java/C++) 
+                  -Node Js 
+                  -Database
+                  -PHP
+                    
+                    
+</pre>
+                <!-- /3/Job description// -->
+            </div>
+            <div class="div_jobs">
+                <div class="iimg">
+                    <img src="images/Frontend.png" width="300px" height="200px">
+                </div>
+<pre id="pre-description">
+
+  Job-description:web Design
+  salary:10k-15k
+  Location:Remote
+  Tools required: HTML -CSS -JS 
+                -Anguar Js 
+                -React Js
+                -API Testing
+                -Database                        
+</pre>               
+                <!-- /4/Job description// -->
+            </div>
+            <div class="div_jobs">
+                <div class="iimg">
+                    <img src="images/systemdev.png" width="300px" height="200px">
+                </div>
+<pre id="pre-description">
+
+  Job-description:System Design
+  salary:20k-25k
+  Location:Remote
+  Tools required: -OOPS-Language
+                (Python/Java/C++) 
+                    
+                                    
+                                    
+</pre>
+                <!-- /5/Job description// -->
+            </div>
+            <div class="div_jobs">
+                <div class="iimg">
+                    <img src="images/marketing.png" width="270px" height="200px">
+                </div>
+<pre id="pre-description">
+
+  Job-description: Marketing
+  salary:10k-15k
+  Location:Remote
+  Tools required: Sales
+                  -Marketing
+                  -Analysis
+                  -Ececuting
+                  -Managing
+                    Operations                             
+</pre>
+                <!-- /6/Job description// -->
+            </div>
+        </div>
+    </div>
+    <!-- *********************Book an Call from our expert*********************** -->
+
+    <div class="book">
+        <div class="appointment">
+            <div class="head">
+                <h1>Book a call from our Experts</h1>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter Number">
+                <input type="date">
+                <input type="time" >
+                <button id="book_btn">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- *******************Meet our Aluminies******************** -->
+
+    <div class="he">
+        <h2>Meet our Aluminies</h2>
+    </div>
+    <div id="Alumini_container">
+        
+        <!-- Profile 1 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Arshak</h2>
+          <p class="location">Location: Noida, India</p>
+          <p class="profession">Profession: Senior Developer,Amazon (SDE-I)</p>
+          <p class="email">Email: user1@example.com</p>
+          <p class="gmail">Gmail: user1@gmail.com</p>
+        </div>
+    
+        <!-- Profile 2 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Joseph Alex</h2>
+          <p class="location">Location: Chennai, India</p>
+          <p class="profession">Profession: Project Manager , DEll</p>
+          <p class="email">Email: user2@example.com</p>
+          <p class="gmail">Gmail: user2@gmail.com</p>
+        </div>
+    
+        <!-- Profile 3 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Chaitanya Krishna</h2>
+          <p class="location">Location: Mumbai , India</p>
+          <p class="profession">Profession: Web Developer , Jk Industries</p>
+          <p class="email">Email: user3@example.com</p>
+        </div>
+    
+        <!-- Profile 4 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Nivas</h2>
+          <p class="location">Location: Banglore , India</p>
+          <p class="profession">Profession: Tester , Sisindri-StartUP's</p>
+          <p class="email">Email: user4@example.com</p>
+          <p class="gmail">Gmail: user4@gmail.com</p>
+        </div>
+    
+        <!-- Profile 5 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Lohith</h2>
+          <p class="location">Location: Texas , New York</p>
+          <p class="profession">Profession: Senior Developer , Google</p>
+          <p class="email">Email: user5@example.com</p>
+          <p class="gmail">Gmail: user5@gmail.com</p>
+        </div>
+    
+        <!-- Profile 6 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Rohith</h2>
+          <p class="location">Location: Hyderabad , India</p>
+          <p class="profession">Profession: HR - StartUp</p>
+          <p class="email">Email: user6@example.com</p>
+          <p class="gmail">Gmail: user6@gmail.com</p>
+        </div>
+    
+        <!-- Profile 7 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Paul</h2>
+          <p class="location">Location: Delhi , India</p>
+          <p class="profession">Profession: Junior Developer , Jp-Morgan</p>
+          <p class="email">Email: user7@example.com</p>
+          <p class="gmail">Gmail: user7@gmail.com</p>
+        </div>
+    
+        <!-- Profile 8 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Jagatrayee</h2>
+          <p class="location">Location: Surat , India</p>
+          <p class="profession">Profession: System Design , amarco</p>
+          <p class="email">Email: user8@example.com</p>
+          <p class="gmail">Gmail: user8@gmail.com</p>
+        </div>
+    
+        <!-- Profile 9 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Valli</h2>
+          <p class="location">Location: Texas , New York</p>
+          <p class="profession">Profession: AI Engineer , Stark Industries</p>
+          <p class="email">Email: user9@example.com</p>
+          <p class="gmail">Gmail: user9@gmail.com</p>
+        </div>
+    
+        <!-- Profile 10 -->
+        <div class="Alumini_profile">
+          <img src="images/Alumini.png" alt="Profile Picture" class="profile-pic">
+          <h2 class="name">Anurag</h2>
+          <p class="location">Location: Sydney , Australia</p>
+          <p class="profession">Profession: Manager</p>
+          <p class="email">Email: user10@example.com</p>
+          <p class="gmail">Gmail: user10@gmail.com</p>
+        </div>
+    
+      </div>
+
+    <!-- ***********************Our Partners**************** -->
+
+      <div class="part">
+            <h1 id="p_h1">Our Partners</h1>
+            <img src="images/Partners.jpg" alt="" width="100%" height="500px">
+      </div>
+      
+
+    <!-- **********************Footer before********************** -->
+    <div id="before_footer">
+        <h1>READY TO WORK WITH US</h1>
+        <a href="MentorRegistration.html"><button>Give us a Shout</button></a>
+    </div>
+    <!-- ********************FOOTER********************** -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Job Genie is a platform dedicated to connecting job seekers with their dream jobs and helping employers find the perfect candidates.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@jobgenie.com</p>
+                    <p>Phone: 123-456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2024 Job Genie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function getStarted() {
+            window.location.href = "registration .html";
+    }
+    </script>
+    
+</body>
+</html>

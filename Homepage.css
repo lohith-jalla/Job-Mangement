@@ -1,0 +1,421 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.nav{
+    width:100%;
+    height:85px;
+    background-color: rgb(97, 203, 216);
+    display:flex;
+    justify-content:space-around;
+    align-items: center; 
+    margin:0px;   
+    overflow: hidden;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+
+.logo{
+    width:100px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#select{
+    border:2px solid rgb(97, 203, 216);
+    border-radius: 20px;
+    background-color: rgb(97, 203, 216);
+    font-size: large;
+    margin:20px;
+    padding:15px;
+}
+
+#select:hover{
+    cursor: pointer;
+    background-color: rgb(4, 97, 109);
+}
+
+#nav_search{
+    border:2px solid rgb(97, 203, 216);
+    border-radius: 20px;
+    width:500px;
+    padding:10px;
+    margin-right:0px;
+    padding-left: 20px;
+}
+
+
+.fa-solid,fa-bell{
+    border:2px solid white;
+    border-radius: 20px;
+    padding:8px;
+    background-color:rgb(97, 203, 216) ;
+    margin:3px;
+}
+
+/* **********************hero section****************** */
+
+.hero_section{
+    width:100%;
+    height:400px;
+    background: url("images/hero_section.webp");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: larger;
+    font-weight: bolder;
+    position: fixed;
+    z-index:-100;
+}
+
+.hero_section h1{
+    margin-top:50px;
+    color:linear-gradient(rgb(97, 203, 216),yellow);
+}
+
+
+/* *************************Content************************* */
+
+
+.content{
+    width:100%;
+    height:500px;
+    margin-top:400px;
+    background-color: rgb(255, 255, 255);
+    z-index:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#matter #pre1{
+    font-size: 44px;
+    font-weight: bolder;
+
+}
+
+#pre2{
+    font-size:18px;
+}
+
+.image{
+    margin-left:200px;
+    animation: imageupdown 3s infinite ease-in-out;
+}
+
+@keyframes imageupdown {
+
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#get_started{
+    background-color: white;
+    color:rgb(97, 203, 216);
+    height:40px;
+    width:150px;
+    cursor: pointer;
+    margin-top:20px;
+    margin-left:70px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+#get_started:hover{
+    color:white;
+    background-color: rgb(97, 203, 216) ;
+}
+
+/* ********************JOBS********************** */
+
+@keyframes Come_to_frame {
+    from {
+        left:0;
+    }
+    to{
+        left:200px;
+    }
+}
+
+#jobs{
+    width:100%;
+    height:1000px;
+    background-color: rgb(236, 231, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#jobs h1{
+    color: rgb(25, 236, 109);
+}
+
+.jobs2_for_these_divs{
+    display: grid;
+    margin:15px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 30px;
+}
+
+.div_jobs{
+    width:300px;
+    height:400px;
+    background-color: white;
+    margin-top:15px;
+    border-radius: 20px;
+    animation: come_to_frame 1s ease-in-out forwards;
+}
+
+.div_jobs:hover{
+    transition-duration: 1s;
+    transform: translateY(-30px);
+    background-color:rgb(97, 203, 216);
+    cursor:pointer;
+}
+
+#pre-description{
+    font-size: 16px;
+    font-weight: bolder;
+    color:rgba(0, 0, 0, 0.769)
+}
+
+/* ********************Booking Appointment******************** */
+
+.book{
+    width:100%;
+    height:500px;
+    background-color: bisque;
+    background: url('images/Demo_appointment.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.head{
+    text-align: center;
+    margin-bottom:30px;
+    border:2px solid black;
+    width:500px;
+    margin-left:500px;
+    border-radius: 20px;
+    background-color: #dbdada;
+}
+
+.form{
+    width: 400px;
+    margin: auto;
+    padding: 22px;
+    background-color: #dbdada;
+    text-align: center;
+}
+.form input{
+    width: 90%;
+    font-size: 20px;
+    padding: 11px;
+    margin-top: 22px;
+    outline: none;
+    border-radius: 20px;
+}
+.form button{
+    width: 200px;
+    height: 44px;
+    background-color: rgb(1, 66, 66);
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin-top: 22px;
+    border-radius: 20px;
+}
+
+#book_btn:hover{
+    transform:scale(1.1);
+    background-color: rgb(0, 255, 0);
+}
+/* *********************Alumini************************* */
+
+
+.he{
+    width:100%;
+    background-color: #333;
+    color:white;
+    font-size: 32px;
+    font-weight: bolder;
+    padding-left:600px;
+    padding-top:20px;
+}
+#Alumini_container {
+    width: 100%;
+    height: 600px;
+    display:flex;
+    padding:70px;
+    gap:50px;
+    overflow-x: hidden;
+    background-color: #333;
+    background: url('images/Alumini_background.png');
+    background-repeat: no-repeat;
+    background-size:cover; 
+  }
+
+  .Alumini_profile {
+    background-color:transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+    animation: goup 30s infinite ease;
+    font-size: 16px;
+  }
+
+  .Alumini_profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #007bff;
+  }
+
+  .name {
+    margin: 5px 0;
+    font-size: 28px;
+    color: black;
+  }
+
+  .location, .profession {
+    margin: 5px 0;
+    color:black;
+  }
+
+  .email, .gmail {
+    margin: 10px 0;
+    color: black;
+  }
+
+  .profile:hover {
+    transform: scale(1.1);
+    background-color: azure;
+  }
+
+  @keyframes goup {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1500px);
+    }
+  }
+
+/* **********************Our Partners*********************** */
+
+  .part{
+    width:100%;
+    height:560px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #p_h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color:rgb(243, 2, 2);
+    border:2px solid white;
+  }
+
+/* *********************Before Footer************************* */
+
+#before_footer{
+    height:200px;
+    background:url("images/skyblue.avif");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#before_footer h1{
+    color:rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#before_footer button{
+    width:140px;
+    height:40px;
+    font-size: medium;
+    font-weight: bold;
+    color:rgb(97, 203, 216);
+    background-color: white;
+    border-radius: 6px;
+}
+
+#before_footer button:hover{
+    color:white;
+    background-color: red;
+}
+
+/* ******************FOOTER*********************** */
+.footer {
+    background-color: rgb(120, 111, 111);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section {
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section p {
+    margin: 0;
+    color: white;
+}
+
+.fa-brands{
+    margin-left:4px;
+}
+.footer-bottom {
+    margin-top: 20px;
+    color: white;
+}
+
+
+
